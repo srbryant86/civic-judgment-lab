@@ -15,7 +15,10 @@ export default function ProductPage() {
     <>
       <PageHero eyebrow="History Judgment Lab · Product Demonstration" title={p.name} lead={p.tagline}>
         <div className="btn-row" style={{ marginTop: "1.25rem" }}>
-          <Link href="/reconstruction" className="btn btn--primary">
+          <Link href="/reconstruction-pack" className="btn btn--primary">
+            Get the Reconstruction pack
+          </Link>
+          <Link href="/reconstruction" className="btn btn--ghost">
             Preview the full pack
           </Link>
           <Link href="/student-packet" className="btn btn--ghost">
