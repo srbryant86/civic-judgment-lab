@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { SITE } from "@/content/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://civic-judgment-lab.example"),
+  metadataBase: new URL("https://civic-judgment-lab.vercel.app"),
   title: {
     default: `${SITE.name} — ${SITE.tagline}`,
     template: `%s · ${SITE.name}`,

@@ -4,6 +4,8 @@
 
 > **Information is everywhere. Judgment has to be taught.**
 
+**▶ Live demo: [civic-judgment-lab.vercel.app](https://civic-judgment-lab.vercel.app)** · Start at [Scope & Sequence](https://civic-judgment-lab.vercel.app/scope-and-sequence) or the [Unit Library](https://civic-judgment-lab.vercel.app/library).
+
 Civic Judgment Lab is a polished MVP web app that doubles as a **secondary social studies teaching portfolio** and a **product demonstration**. It shows how a serious history teacher can use modern instructional design — primary-source analysis, differentiation, civic reasoning, and responsible AI literacy — to teach students not just to *find* information, but to *judge what information does* in public life.
 
 The flagship content is the **History Judgment Lab: Reconstruction Starter Pack**, supported by a bonus module (**From Printing Press to AI: Information, Power, and Judgment**) and a civic-judgment framework (**From Bias Detection to Civic Judgment**).
