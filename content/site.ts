@@ -50,8 +50,10 @@ export const FOOTER_NAV: { title: string; items: NavItem[] }[] = [
   {
     title: "About",
     items: [
-      { href: "/responsible-ai", label: "Responsible AI & Civic Judgment" },
       { href: "/product", label: "Product Overview" },
+      { href: "/reconstruction-pack", label: "Get the Reconstruction Pack" },
+      { href: "/for-administrators", label: "For Principals & Chairs" },
+      { href: "/responsible-ai", label: "Responsible AI & Civic Judgment" },
       { href: "/reflection", label: "Educator Reflection" },
       { href: "/", label: "Home" },
     ],
@@ -69,3 +71,14 @@ export const CORE_PRINCIPLE =
   "You do not have to be neutral, but you do have to be accountable to evidence.";
 export const RECONSTRUCTION_DRIVING_QUESTION =
   "After the Civil War, did Reconstruction transform American citizenship, or did biased stories about race, power, and freedom help restore the old order?";
+
+/** Purchase configuration for the Reconstruction pack sales page.
+ *  To go live: paste your Gumroad/Stripe Payment Link into `purchaseUrl`
+ *  and set `available` to true. Until then the page shows the demo state. */
+export const PRODUCT_SALE = {
+  available: false,
+  purchaseUrl: "", // e.g. "https://<you>.gumroad.com/l/reconstruction-pack"
+  price: "$9",
+  /** Optional: a licensing-enquiries email, shown only if set. */
+  contactEmail: "",
+};

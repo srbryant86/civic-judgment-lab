@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { portfolio } from "@/content/portfolio";
+import { PRODUCT_SALE } from "@/content/site";
 import { PageHero, Section, Card, CardGrid, Callout } from "@/components/ui";
 
 const p = portfolio.product;
@@ -118,6 +119,42 @@ export default function ReconstructionPackSalesPage() {
           In a live release: single-teacher, building, and district licenses, with the Day&nbsp;1
           lesson always free.
         </p>
+
+        {PRODUCT_SALE.available && PRODUCT_SALE.purchaseUrl ? (
+          <div className="btn-row" style={{ marginTop: "1.5rem" }}>
+            <a
+              href={PRODUCT_SALE.purchaseUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn--accent"
+            >
+              Buy the pack — {PRODUCT_SALE.price}
+            </a>
+            <Link href="/reconstruction#sequence" className="btn btn--ghost">
+              Try the free sample first
+            </Link>
+            <Link href="/for-administrators" className="btn btn--ghost">
+              For principals &amp; chairs
+            </Link>
+          </div>
+        ) : (
+          <div className="btn-row" style={{ marginTop: "1.5rem" }}>
+            <Link href="/reconstruction#sequence" className="btn btn--accent">
+              Try the free sample
+            </Link>
+            <Link href="/for-administrators" className="btn btn--ghost">
+              For principals &amp; chairs
+            </Link>
+            {PRODUCT_SALE.contactEmail ? (
+              <a
+                href={`mailto:${PRODUCT_SALE.contactEmail}?subject=History%20Judgment%20Lab%20licensing`}
+                className="btn btn--ghost"
+              >
+                Licensing enquiries
+              </a>
+            ) : null}
+          </div>
+        )}
       </Section>
 
       <Section eyebrow="Questions" title="Frequently asked">
